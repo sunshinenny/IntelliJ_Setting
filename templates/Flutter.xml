@@ -1,8 +1,8 @@
 <templateSet group="Flutter">
-  <template name="animBldr" value="AnimatedBuilder(&#10;  animation: $animationController$,&#10;  child: $childWidget$,&#10;  builder: (BuildContext context, Widget child) {&#10;    return $buildWidget$;&#10;  },&#10;);" description="New AnimatedBuilder" toReformat="false" toShortenFQNames="true">
-    <variable name="animationController" expression="&quot;animationController&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="childWidget" expression="&quot;childWidget&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="buildWidget" expression="&quot;buildWidget&quot;" defaultValue="" alwaysStopAt="true" />
+  <template name="customScrollV" value="CustomScrollView(&#10;slivers: &lt;Widget&gt;[&#10;$childWidget1$,&#10;$childWidget2$,&#10;$childWidget3$,&#10;],&#10;)," description="New CustomScrollView" toReformat="false" toShortenFQNames="true">
+    <variable name="childWidget1" expression="&quot;childWidget1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="childWidget2" expression="&quot;childWidget2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="childWidget3" expression="&quot;childWidget3&quot;" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
 </templateSet>
