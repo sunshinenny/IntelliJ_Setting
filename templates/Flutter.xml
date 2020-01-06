@@ -1,13 +1,6 @@
 <templateSet group="Flutter">
-  <template name="animBldr" value="AnimatedBuilder(&#10;  animation: $animationController$,&#10;  child: $childWidget$,&#10;  builder: (BuildContext context, Widget child) {&#10;    return $buildWidget$;&#10;  },&#10;);" description="New AnimatedBuilder" toReformat="false" toShortenFQNames="true">
-    <variable name="animationController" expression="&quot;animationController&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="childWidget" expression="&quot;childWidget&quot;" defaultValue="" alwaysStopAt="true" />
-    <variable name="buildWidget" expression="&quot;buildWidget&quot;" defaultValue="" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="aspectRatio" value="AspectRatio(&#10;aspectRatio: $aspectRatio$,&#10;child: $child$&#10;)," description="New AspectRatio Widget" toReformat="false" toShortenFQNames="true">
-    <variable name="aspectRatio" expression="$aspectRatio$" defaultValue="" alwaysStopAt="true" />
-    <variable name="child" expression="$child$" defaultValue="" alwaysStopAt="true" />
+  <template name="layoutBldr" value="LayoutBuilder(&#10;builder: (BuildContext context, BoxConstraints constraints) {&#10;return $widget$;&#10;},&#10;)," description="New LayoutBuilder" toReformat="false" toShortenFQNames="true">
+    <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
 </templateSet>
