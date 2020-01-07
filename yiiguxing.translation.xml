@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="可点击区域" />
       <item value="trailing" />
       <item value="middle" />
       <item value="automatically Imply Middle" />
@@ -19,7 +20,7 @@
     <option name="languageScores">
       <map>
         <entry key="CHINESE" value="13" />
-        <entry key="ENGLISH" value="14" />
+        <entry key="ENGLISH" value="15" />
       </map>
     </option>
   </component>
