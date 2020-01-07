@@ -1,6 +1,10 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="trailing" />
+      <item value="middle" />
+      <item value="automatically Imply Middle" />
+      <item value="automatically Imply Leading" />
       <item value="收藏" />
       <item value="No Such Method Error" />
       <item value="type 'int' is not a subtype of type 'String' in type cast" />
@@ -14,8 +18,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="9" />
-        <entry key="ENGLISH" value="10" />
+        <entry key="CHINESE" value="13" />
+        <entry key="ENGLISH" value="14" />
       </map>
     </option>
   </component>
