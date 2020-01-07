@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="切换" />
       <item value="可点击区域" />
       <item value="trailing" />
       <item value="middle" />
@@ -20,7 +21,7 @@
     <option name="languageScores">
       <map>
         <entry key="CHINESE" value="13" />
-        <entry key="ENGLISH" value="15" />
+        <entry key="ENGLISH" value="16" />
       </map>
     </option>
   </component>
