@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="type '_InternalLinkedHashMap&lt;String, dynamic&gt;' is not a subtype of type 'String'" />
       <item value="build" />
       <item value="骨架" />
       <item value="border On Foreground" />
@@ -25,8 +26,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="17" />
-        <entry key="ENGLISH" value="21" />
+        <entry key="CHINESE" value="18" />
+        <entry key="ENGLISH" value="22" />
       </map>
     </option>
   </component>
