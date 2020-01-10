@@ -1,6 +1,8 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="大拇指" />
+      <item value="点赞" />
       <item value="type '_InternalLinkedHashMap&lt;String, dynamic&gt;' is not a subtype of type 'String'" />
       <item value="build" />
       <item value="骨架" />
@@ -27,7 +29,7 @@
     <option name="languageScores">
       <map>
         <entry key="CHINESE" value="18" />
-        <entry key="ENGLISH" value="22" />
+        <entry key="ENGLISH" value="24" />
       </map>
     </option>
   </component>
