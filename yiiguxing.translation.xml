@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="The following assertion was thrown during a scheduler callback: There are multiple heroes that share the same tag within a subtree. Within each subtree for which heroes are to be animated (i.e. a PageRoute subtree), each Hero must have a unique non-null tag. In this case, multiple heroes had the following tag: feed_title_58244" />
       <item value="Consider applying a flex factor (e.g. using an Expanded widget) to force the children of the RenderFlex to fit within the available space instead of being sized to their natural size. This is considered an error condition because it indicates that there is content that cannot be seen. If the content is legitimately bigger than the available space, consider clipping it with a ClipRect widget before putting it in the flex, or using a scrollable container rather than a Flex, like a ListView." />
       <item value="Key key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController controller, bool primary, ScrollPhysics physics, bool shrinkWrap = false, EdgeInsetsGeometry padding, this.itemExtent, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double cacheExtent, List&lt;Widget&gt; children = const &lt;Widget&gt;[], int semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start," />
       <item value="RenderBox was not laid out: RenderShrinkWrappingViewport#1e469 relayoutBoundary=up22 NEEDS-PAINT NEEDS-COMPOSITING-BITS-UPDATE 'package:flutter/src/rendering/box.dart': Failed assertion: line 1687 pos 12: 'hasSize' The relevant error-causing widget was:" />
@@ -42,8 +43,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="36" />
-        <entry key="ENGLISH" value="44" />
+        <entry key="CHINESE" value="37" />
+        <entry key="ENGLISH" value="45" />
       </map>
     </option>
   </component>
