@@ -1,0 +1,251 @@
+<templateSet group="Flutter">
+  <template name="mainstl" value="import 'package:flutter/material.dart';&#10;&#10;void main() {&#10;  runApp(&#10;    MaterialApp(&#10;      title: '$TITLE$',&#10;      theme: ThemeData(&#10;        primarySwatch: Colors.blue,&#10;      ),&#10;      home: $CLASS$(),&#10;    ),&#10;  );&#10;}&#10;&#10;class $CLASS$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Scaffold(&#10;      appBar: AppBar(&#10;        title: Text('$TITLE$'),&#10;      ),&#10;    );&#10;  }&#10;}" description="创建 StatelessWidget 控件" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="mainstf" value="import 'package:flutter/material.dart';&#10;&#10;void main() {&#10;  runApp(MaterialApp(&#10;    title: '$TITLE$',&#10;    theme: ThemeData(&#10;      primarySwatch: Colors.blue,&#10;    ),&#10;    home: $CLASS$(),&#10;  ));&#10;}&#10;&#10;class $CLASS$ extends StatefulWidget {&#10;  @override&#10;  _$CLASS$State createState() =&gt; new _$CLASS$State();&#10;}&#10;&#10;class _$CLASS$State extends State&lt;$CLASS$&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Scaffold(&#10;      appBar: new AppBar(&#10;        title: new Text('$TITLE$'),&#10;      ),&#10;    );&#10;  }&#10;}" description="创建 StatefulWidget 控件" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="bab" value="AnimatedBuilder(&#10;    animation: $animation$,&#10;    child: $child$,&#10;    builder: (BuildContext context, Widget child) {&#10;        return Container();&#10;    },&#10;)," description="创建AnimatedBuilder" toReformat="false" toShortenFQNames="true">
+    <variable name="animation" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="bu" value="@override&#10;Widget build(BuildContext context) {&#10;    return $CLASSNAME$;&#10;}" description="创建build()方法" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="class $nameClipper$ extends CustomClipper&lt;Path&gt; {&#10;    @override&#10;    Path getClip(Size size) {&#10;        //TODO&#10;    }&#10;    &#10;    @override&#10;    bool shouldReclip(CustomClipper&lt;Path&gt; oldClipper) =&gt; false;&#10;}" description="自定义CustomClipper" toReformat="false" toShortenFQNames="true">
+    <variable name="nameClipper" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cp" value="class $name$Painter extends CustomPainter {&#10;    @override&#10;    void paint(Canvas canvas, Size size) {&#10;        //TODO&#10;    }&#10;    &#10;    @override&#10;    bool shouldRepaint($name$Painter oldDelegate) =&gt; false;&#10;    &#10;    @override&#10;    bool shouldRebuildSemantics($name$Painter oldDelegate) =&gt; false;&#10;}" description="自定义CustomPainter" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="svc" value="CustomScrollView(&#10;  slivers: &lt;Widget&gt;[&#10;    //TODO&#10;  ],&#10;)," description="创建CustomScrollView" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="me" value="void $methodName$(){&#10;  //TODO&#10;}" description="创建方法" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="mep" value="void _$methodName$(){&#10;  //TODO&#10;}" description="创建私有方法" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cen" value="Center(&#10;    child: $widget$,&#10;)," description="创建Center" toReformat="false" toShortenFQNames="true">
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="col" value="Column(&#10;    children: [],&#10;)," description="创建Column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="con" value="Container(&#10;    //宽度&#10;    width: $width$,&#10;    //高度&#10;    height: $height$,&#10;    // 盒子样式&#10;    decoration: new BoxDecoration(&#10;        color: Colors.$teal$,&#10;        //设置Border属性给容器添加边框&#10;        border: new Border.all(&#10;            //为边框添加颜色&#10;            color: Colors.$lightGreen$,&#10;            //边框宽度&#10;            width: $width_border$,&#10;        ),&#10;    ),&#10;    child: $child$,&#10;);" description="创建完整的Container" toReformat="false" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="teal" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="lightGreen" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width_border" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="row" value="Row(&#10;    children: [],&#10;)," description="创建Row" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="bustf" value="StatefulBuilder(&#10;    builder: (BuildContext context, setState) {&#10;        return $widget$;&#10;    },&#10;);" description="创建StatefulBuilder" toReformat="false" toShortenFQNames="true">
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="bustr" value="StreamBuilder(&#10;    stream: $stream$,&#10;    initialData: $initialData$,&#10;    builder: (BuildContext context, AsyncSnapshot snapshot) {&#10;        return $widget$;&#10;    },&#10;);" description="创建StreamBuilder" toReformat="false" toShortenFQNames="true">
+    <variable name="stream" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="initialData" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="buob" value="OrientationBuilder(&#10;    builder: (BuildContext context, Orientation orientation) {&#10;        return Container();&#10;    },&#10;);" description="创建OrientationBuilder" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="bufb" value="FutureBuilder(&#10;    future: $Future$,&#10;    initialData: $InitialData$,&#10;    builder: (BuildContext context, AsyncSnapshot snapshot) {&#10;        return $widget$;&#10;    },&#10;);" description="创建FutureBuilder" toReformat="false" toShortenFQNames="true">
+    <variable name="Future" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="InitialData" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="bulb" value="LayoutBuilder(&#10;    builder: (BuildContext context, BoxConstraints constraints) {&#10;        return $widget$;&#10;    },&#10;);" shortcut="SPACE" description="创建LayoutBuilder" toReformat="false" toShortenFQNames="true">
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="sb" value="  new SizedBox(&#10;    width: $width$, &#10;    height: $height$, &#10;    child: $child$,&#10;  );" description="创建SizedBox" toReformat="false" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="te" value="Text('$text$',&#10;    style: TextStyle(&#10;        color: Colors.$colors$, &#10;        fontWeight: FontWeight.$bold$, &#10;        fontSize: $double_value$,&#10;    ),&#10;    textAlign: TextAlign.$center$,&#10;    textDirection: TextDirection.$ltr$,&#10;    textScaleFactor: $value$,&#10;    overflow: TextOverflow.$ellipsis$,&#10;    locale: Localizations.localeOf(context),&#10;    maxLines: $int_value$,&#10;);" description="创建一个标准的Text" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="colors" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="bold" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="double_value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="center" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ltr" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ellipsis" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="int_value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="stf" value="class $class$ extends StatefulWidget {&#10;  @override&#10;  $class$State createState() =&gt; new $class$State();&#10;}&#10;&#10;class $class$State extends State&lt;$class$&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Scaffold(&#10;      appBar: AppBar(&#10;        title: Text('$title$'),&#10;      ),&#10;    );&#10;  }&#10;  @override&#10;  void initState() {&#10;    // TODO: implement initState&#10;    super.initState();&#10;  }&#10;&#10;  @override&#10;  void dispose() {&#10;    // TODO: implement dispose&#10;    super.dispose();&#10;  }&#10;&#10;  @override&#10;  void didUpdateWidget($class$ oldWidget) {&#10;    // TODO: implement didUpdateWidget&#10;    super.didUpdateWidget(oldWidget);&#10;  }&#10;&#10;  @override&#10;  void didChangeDependencies() {&#10;    // TODO: implement didChangeDependencies&#10;    super.didChangeDependencies();&#10;  }&#10;}" description="创建完整的StatefulWidget，包含生命周期相关方法。" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="csv" value="CustomScrollView(&#10;    shrinkWrap: true,&#10;    slivers: &lt;Widget&gt;[&#10;        SliverPadding(&#10;            padding: const EdgeInsets.all($value$),&#10;            sliver: new SliverList(&#10;                delegate: new SliverChildListDelegate(&#10;                    &lt;Widget&gt;[&#10;                        //TODO:请填写子控件&#10;                    ],&#10;                ),&#10;            ),&#10;        ),&#10;    ],&#10;);" description="CustomScrollView + SliverPadding创建列表，子控件带有边距" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="ssv" value="SingleChildScrollView(&#10;    scrollDirection: Axis.vertical,&#10;    padding: EdgeInsets.all($value$),&#10;    controller: $controller$,&#10;    child: $widget$,&#10;);" description="创建SingleChildScrollView" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="lvd" value="ListView(&#10;    shrinkWrap: true,&#10;    // 排列方向，Axis.horizontal表示水平，Axis.vertical表示垂直&#10;    scrollDirection: Axis.vertical,&#10;    padding: const EdgeInsets.all(20.0),&#10;    children: &lt;Widget&gt;[&#10;        $your_widget$,&#10;        Divider(height: 1.0, color: Colors.grey),&#10;        $your_widget$,&#10;        Divider(height: 1.0, color: Colors.grey),&#10;        // todo: 建议控件多的话可以做一个封装&#10;    ],&#10;);" description="创建带分割线的ListView" toReformat="false" toShortenFQNames="true">
+    <variable name="your_widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="gv" value="GridView.count(&#10;    // 创建几列&#10;    crossAxisCount: $crossAxisCount$,&#10;    // Axis.horizontal表示横向滑动，scrollDirection: Axis.vertical表示纵向滑动&#10;    scrollDirection: Axis.vertical,&#10;    // 列之间的间距&#10;    crossAxisSpacing: $crossAxisSpacing$,&#10;    // 行之间的间距&#10;    mainAxisSpacing: $mainAxisSpacing$,&#10;    // 默认false 是否根据子孩子的宽高自动包裹item自身&#10;    shrinkWrap: false,&#10;    // true表示数据倒序排列 false表示顺序排列&#10;    reverse: false,&#10;    // 子孩子的比例&#10;    childAspectRatio: $childAspectRatio$,&#10;    // 设置子孩子item,这里传入子孩子控件&#10;    children: $item$,&#10;);" description="创建GridView.count" toReformat="false" toShortenFQNames="true">
+    <variable name="crossAxisCount" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="crossAxisSpacing" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="mainAxisSpacing" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="childAspectRatio" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="lvt" value="ListView(&#10;    children: &lt;Widget&gt;[&#10;      // 一个有图片和文字组成的简单列表item&#10;      ListTile(&#10;        leading: Icon(Icons.$icon$),&#10;        title: Text('$title$'),&#10;        subtitle: Text('$subtitle$'),&#10;        // 右边的图标&#10;        trailing: Icon(Icons.$icon$),&#10;        onTap: () {&#10;          //TODO:这里处理点击事件&#10;        },&#10;        onLongPress: () {&#10;          //TODO:这里处理长按事件&#10;        },&#10;        selected: true,&#10;      ),&#10;      // 单选框列表item&#10;      CheckboxListTile(&#10;        value: true,&#10;        onChanged: ((bool) {&#10;          //TODO:焦点改变的监听事件写在这里：&#10;        }),&#10;        title: Text('$CheckboxListTile$'),&#10;        subtitle: Text('$CheckboxSubtitle$'),&#10;        selected: true,&#10;        activeColor: Colors.teal,&#10;      ),&#10;      // 开关列表item&#10;      SwitchListTile(&#10;        value: true,&#10;        onChanged: ((bool) {&#10;         //TODO:焦点改变的监听事件写在这里：&#10;        }),&#10;        title: Text('$SwitchListTile$'),&#10;        subtitle: Text('$SwitchListsSubtitle$'),&#10;        //如果subtitle文字过长，将会以三行显示&#10;        isThreeLine: true,&#10;        selected: true,&#10;        activeColor: Colors.teal,&#10;        //SwitchListTile左边的图标&#10;        secondary: Icon(Icons.account_circle),&#10;      ),&#10;      AboutListTile(&#10;        icon: Icon(Icons.$about$),&#10;        //公司logo&#10;        applicationIcon: Image.asset('$asset_name$'),&#10;        //app名称&#10;        applicationName: '关于我们',&#10;        //app版本号&#10;        applicationVersion: 'V1.0.0',&#10;        //版权信息&#10;        applicationLegalese: '版权归XX科技有限公司所有...',&#10;      ),&#10;    ],&#10;);" description="创建带有各种ListTile的ListView" toReformat="false" toShortenFQNames="true">
+    <variable name="icon" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="subtitle" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CheckboxListTile" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CheckboxSubtitle" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SwitchListTile" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SwitchListsSubtitle" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="about" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="asset_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="lvb" value="ListView.builder(&#10;    padding: EdgeInsets.all($value$),&#10;    itemCount: $itemCount$,&#10;    itemBuilder: (BuildContext context, int index) {&#10;        return $widget$;&#10;    },&#10;);" description="创建ListView.builder" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="itemCount" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="lvr" value="//TODO:以下代码要写在State类里面&#10;Widget items() {&#10;    return Column(&#10;      // In the build function of that State&#10;      children: &lt;Widget&gt;[&#10;        new RadioListTile&lt;SingingCharacter&gt;(&#10;          title: const Text('$title1$'),&#10;          value: SingingCharacter.title1,&#10;          groupValue: _character,&#10;          onChanged: (SingingCharacter value) {&#10;            setState(() {&#10;              _character = value;&#10;            });&#10;          },&#10;        ),&#10;        RadioListTile&lt;SingingCharacter&gt;(&#10;          title: const Text('$title2$'),&#10;          value: SingingCharacter.title2,&#10;          groupValue: _character,&#10;          onChanged: (SingingCharacter value) {&#10;            setState(() {&#10;              _character = value;&#10;            });&#10;          },&#10;        ),&#10;      ],&#10;    );&#10;}&#10;&#10;// In the State of a stateful widget:&#10;SingingCharacter _character = SingingCharacter.title1;&#10;&#10;// TODO: 这个类写在State类外面  &#10;enum SingingCharacter { title1, title2 }" description="创建RadioListTile，可以单选的item" toReformat="false" toShortenFQNames="true">
+    <variable name="title1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="lv" value="ListView(&#10;    children: &lt;Widget&gt;[&#10;      //TODO:这里写子控件。&#10;    ],&#10;);" description="创建基本的ListView" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="csv2" value="CustomScrollView(&#10;    shrinkWrap: true,&#10;    slivers: &lt;Widget&gt;[&#10;        SliverGrid(&#10;            // 设置grid的宽高、间距属性&#10;            gridDelegate: new SliverGridDelegateWithMaxCrossAxisExtent(&#10;                // 可以理解为：每一个item的宽（或高）的最大值&#10;                maxCrossAxisExtent: $maxCrossAxisExtent$,&#10;                // 行之间的间距&#10;                mainAxisSpacing: $mainAxisSpacing$,&#10;                // 列之间的间距&#10;                crossAxisSpacing: $crossAxisSpacing$,&#10;                // 子孩子的宽高比例，即：宽度/高度的值&#10;                childAspectRatio: $childAspectRatio$,&#10;                ),&#10;            // 设置每一个item的布局&#10;            delegate: new SliverChildBuilderDelegate(&#10;                (BuildContext context, int index) {&#10;                      return $widget$;&#10;                }, &#10;                childCount: $childCount$,&#10;            ),&#10;        )&#10;    ],&#10;);" description="使用CustomScrollView + SliverGrid创建列表" toReformat="false" toShortenFQNames="true">
+    <variable name="maxCrossAxisExtent" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="mainAxisSpacing" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="crossAxisSpacing" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="childAspectRatio" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="childCount" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="stl" value="class $class$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Scaffold(&#10;      appBar: AppBar(&#10;        title: Text('$text$'),&#10;      ),&#10;    );&#10;  }&#10;}" description="创建StatelessWidget" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="inw" value="class $NAME$ extends InheritedWidget {&#10;    const $NAME$({&#10;    Key key,&#10;    @required Widget child,&#10;    }) : assert(child != null),&#10;       super(key: key, child: child);&#10;    &#10;    static $NAME$ of(BuildContext context) {&#10;        return context.inheritFromWidgetOfExactType($NAME$) as $NAME$;&#10;    }&#10;    &#10;    @override&#10;    bool updateShouldNotify($NAME$ old) {&#10;        return false;&#10;    }&#10;}" description="创建 InheritedWidget" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="stanim" value="class $NAME$ extends StatefulWidget {&#10;  @override&#10;  _$NAME$State createState() =&gt; _$NAME$State();&#10;}&#10;&#10;class _$NAME$State extends State&lt;$NAME$&gt; with SingleTickerProviderStateMixin {&#10;  AnimationController _controller;&#10;&#10;  @override&#10;  void initState() {&#10;    _controller = AnimationController(vsync: this);&#10;    super.initState();&#10;  }&#10;&#10;  @override&#10;  void dispose() {&#10;    _controller.dispose();&#10;    super.dispose();&#10;  }&#10;  &#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}" description="创建Stateful（带有 AnimationController）" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="n" value="(){}" description="生成匿名函数" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="n2" value="($params1$,$params2$){}" description="生成两个参数的匿名函数" toReformat="false" toShortenFQNames="true">
+    <variable name="params1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+</templateSet>
