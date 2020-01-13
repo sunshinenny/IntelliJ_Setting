@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="{@macro flutter.widgets.widgetsApp.shortcuts} /// {@tool snippet} /// This example shows how to add a single shortcut for /// [LogicalKeyboardKey.select] to the default shortcuts without needing to /// add your own [Shortcuts] widget. /// /// Alternatively, you could insert a [Shortcuts] widget with just the mapping /// you want to add between the [WidgetsApp] and its child and get the same /// effect. /// /// ```dart /// Widget build(BuildContext context) { /// return WidgetsApp( /// shortcuts: &lt;LogicalKeySet, Intent&gt;{ /// ... WidgetsApp.defaultShortcuts, /// LogicalKeySet(LogicalKeyboardKey.select): const Intent(ActivateAction.key), /// }, /// color: const Color(0xFFFF0000), /// builder: (BuildContext context, Widget child) { /// return const Placeholder(); /// }, /// ); /// } /// ``` /// {@end-tool} /// {@macro flutter.widgets.widgetsApp.shortcuts.seeAlso}" />
       <item value="/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin19/rbconfig.rb:229: warning: Insecure world writable dir /Users/sunshinenny/Development in PATH, mode 040777 [!] Automatically assigning platform `iOS` with version `8.0` on target `Runner` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`." />
       <item value="/// Signature for a function that creates a widget, e.g. [StatelessWidget.build] /// or [State.build]. /// /// Used by [Builder.builder], [OverlayEntry.builder], etc. /// /// See also: /// /// * [IndexedWidgetBuilder], which is similar but also takes an index. /// * [TransitionBuilder], which is similar but also takes a child. /// * [ValueWidgetBuilder], which is similar but takes a value and a child." />
       <item value="The following assertion was thrown during a scheduler callback: There are multiple heroes that share the same tag within a subtree. Within each subtree for which heroes are to be animated (i.e. a PageRoute subtree), each Hero must have a unique non-null tag. In this case, multiple heroes had the following tag: feed_title_58244" />
@@ -45,8 +46,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="39" />
-        <entry key="ENGLISH" value="47" />
+        <entry key="CHINESE" value="40" />
+        <entry key="ENGLISH" value="48" />
       </map>
     </option>
   </component>
